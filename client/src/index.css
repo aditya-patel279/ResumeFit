@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+.ql-editor {
+  min-height: 500px;
+  font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.5;
+}
+
+.ql-editor h1 {
+  font-size: 20pt;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.ql-editor h2 {
+  font-size: 14pt;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ql-editor h3 {
+  font-size: 12pt;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.ql-editor ul, .ql-editor ol {
+  padding-left: 20px;
+}
+
+.ql-editor li {
+  margin-bottom: 2px;
+}
+
+.ql-toolbar.ql-snow {
+  @apply border-gray-300 rounded-t-lg bg-white sticky top-0 z-10;
+}
+
+.ql-container.ql-snow {
+  @apply border-gray-300 rounded-b-lg bg-white;
+}
+
+.drop-zone-active {
+  @apply border-primary-500 bg-primary-50;
+}
